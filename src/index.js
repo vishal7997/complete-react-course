@@ -9,4 +9,7 @@ import App from './app';
 // ReactDOM.render(header, document.getElementById('root'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />)
+root.render(<App />);
+
+// let div = document.getElementById('root');
+// div.append(App());
