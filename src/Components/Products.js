@@ -1,3 +1,4 @@
+import React from 'react';
 import ProductDetails from "./ProductDetails";
 
 // let imageUrl = require("../images/test-img.jpg");

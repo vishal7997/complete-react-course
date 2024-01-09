@@ -1,3 +1,4 @@
+import React from "react";
 import Button from "./Button";
 
 let productCount = 0;
@@ -24,6 +25,14 @@ function ProductDetails(props) {
       </span>
     </div>
   );
+
+  // return React.createElement('div', {className: 'd-flex align-items-center justify-content-start mt-1'},
+  //     React.createElement('h6', {className: 'font-weight-bold my-2', style: {marginRight: 30}}, "$" + props.price),
+  //     React.createElement(Button, {}, "-"),
+  //     React.createElement('span', {style: {padding: "0px 20px", fontSize: 14}}, displayFormattedProductCount()),
+  //     React.createElement(Button, {}, "+"),
+  //     React.createElement('span', {className: badgeClass}, props.isAvailable ? "Available" : "UnAvailable")
+  // )
 }
 
 export default ProductDetails;
