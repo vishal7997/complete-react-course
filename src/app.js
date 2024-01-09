@@ -48,6 +48,7 @@ function App() {
   return (
     <div className="row">
       <div className="col-lg-8 mx-auto">
+      <ul className="list-group shadow">
         <Products
           id={products[0].pID}
           name={products[0].pName}
@@ -88,6 +89,7 @@ function App() {
           imageUrl={products[4].image}
           price={products[4].price}
         ></Products>
+        </ul>
       </div>
     </div>
   );
