@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import ProductDetails from "./ProductDetails";
 
 // let imageUrl = require("../images/test-img.jpg");
@@ -10,6 +10,7 @@ import ProductDetails from "./ProductDetails";
 // }
 
 function Products(props) {
+  console.log("Products Component Executed");
   return (
     <li className="list-group-item">
       <div className="media align-items-lg-center flex-column flex-lg-row p-3 d-flex">
