@@ -58,8 +58,22 @@ function ProductForm() {
     //   pImageUrl: event.target.value,
     // });
   }
+
+  function createProductEventHandler(event) {
+    event.preventDefault();
+    let product = {
+      pID: 1,
+      pName: pName,
+      desc: pDescription,
+      isAvailable: Boolean(pAvailable),
+      image: pImageUrl,
+      price: Number(pPrice),
+    };
+
+    console.log(product);
+  }
   return (
-    <form className="row g-3">
+    <form className="row g-3" onSubmit={createProductEventHandler}>
       <div className="col-md-6">
         <label for="name">Product Name</label>
         <input
