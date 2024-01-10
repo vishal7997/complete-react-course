@@ -27,11 +27,11 @@ function ProductDetails(props) {
 
   return (
     <div className="d-flex align-items-center justify-content-start mt-1">
-      <h6 className="font-weight-bold my-2" style={{ "margin-right": 30 }}>
+      <h6 className="font-weight-bold my-2" style={{ marginRight: 30 }}>
         ${props.price}
       </h6>
       <Button eventHandler={decrementProductCount}>-</Button>
-      <span style={{ padding: "0px 20px", "font-size": 14 }}>
+      <span style={{ padding: "0px 20px", fontSize: 14 }}>
         {displayFormattedProductCount()}
       </span>
       <Button eventHandler={incrementProductCount}>+</Button>
