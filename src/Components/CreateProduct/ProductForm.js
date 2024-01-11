@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ProductForm() {
+function ProductForm(props) {
   let [pName, updateName] = useState("");
   let [pPrice, updatePrice] = useState("");
   let [pDescription, updateDescription] = useState("");
@@ -76,7 +76,8 @@ function ProductForm() {
     updateAvailablity(false);
     updateImageUrl("");
 
-    console.log(product);
+    // console.log(product);
+    props.createProduct(product);
   }
   return (
     <form className="row g-3" onSubmit={createProductEventHandler}>
