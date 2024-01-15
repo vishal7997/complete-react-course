@@ -3,7 +3,11 @@ import React from "react";
 function Button(props) {
   console.log("Button Component Executed");
   return (
-    <button onClick={props.eventHandler} className="btn btn-primary">
+    <button
+      onClick={props.eventHandler}
+      className="btn btn-primary"
+      disabled={props.disable}
+    >
       {props.children}
     </button>
   );

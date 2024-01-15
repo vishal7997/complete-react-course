@@ -22,7 +22,11 @@ function Products(props) {
           <p className="font-italic text-muted mb-0 small">
             {props.description}
           </p>
-          <ProductDetails price={props.price} isAvailable={props.isAvailable}>
+          <ProductDetails
+            price={props.price}
+            isAvailable={props.isAvailable}
+            stock={props.stock}
+          >
             <p>This is a demo</p>
           </ProductDetails>
         </div>

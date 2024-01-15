@@ -2,7 +2,9 @@ import Products from "./Products";
 
 function ProductList(props) {
   // if(props.newProductList.length === 0 ) return <h3>No products available!</h3>
-  return props.newProductList.length === 0 ? <h3>No products available!</h3> : (
+  return props.newProductList.length === 0 ? (
+    <h3>No products available!</h3>
+  ) : (
     <ul className="list-group shadow">
       {props.newProductList.map((product) => {
         return (
@@ -14,6 +16,7 @@ function ProductList(props) {
             isAvailable={product?.isAvailable}
             imageUrl={product?.image}
             price={product?.price}
+            stock={product?.stock}
           ></Products>
         );
       })}
